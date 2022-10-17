@@ -1,0 +1,36 @@
+function validacion() {
+    console.log("comprobando la validación")
+    if (nombre.value.trim() == "") {
+        alert('Por favor, escribe tu nombre');
+        nombre.focus();
+        return false;
+    } 
+    if (telefono.value.trim() == "") {
+        alert('Por favor, escribe tu teléfono');
+        telefono.focus();
+        return false;
+    }
+    if (direccion.value.trim() == "") {
+        alert('Por favor, escribe tu dirección');
+        direccion.focus();
+        return false;
+    }
+
+    tamaño = document.getElementsByName("tamaño");
+            var seleccionado = false;
+            for(var i=0; i<tamaño.length; i++) {
+                if(tamaño[i].checked) {
+                    seleccionado = true;
+                    break;
+                }
+            }
+            if(!seleccionado) {
+                alert('Debes seleccionar un tamaño para tu pizza');
+                return false;
+            }
+            
+}
+
+window.onload = function(){
+    formulario_pizza.onsubmit = validacion;                                    
+}
