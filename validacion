@@ -33,9 +33,22 @@ function validacion() {
                 alert('Debes seleccionar un tamaño para tu pizza');
                 return false;
             }
+
+    ingredientes = 0;
+            if (bacon.checked==true) ingredientes++;
+            if (cebolla.checked==true) ingredientes++;
+            if (champinon.checked==true) ingredientes++;
+            if (peperoni.checked==true) ingredientes++;
+        console.log ("has elegido "+ ingredietes + "ingredientes");
+
+        if (ingredientes == 0 ){
+            alert ("Debes elegir al menos un ingrediente");
+        }
+        
             
-}
+
 
 window.onload = function(){
     formulario_pizza.onsubmit = validacion;                                    
+}
 }

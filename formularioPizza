@@ -40,14 +40,10 @@
   <br>
   <div class="row">
     <label class="required" for="ingredientes"><b>Ingredientes:</b></label><br />
-    <input id="ingredientes" class="input" type="checkbox" name="aceitunas" value="aceitunas">Aceitunas negras</input>
-    <input id="ingredientes" class="input" type="checkbox" name="anchoas" value="anchoas">Anchoas</input>
     <input id="ingredientes" class="input" type="checkbox" name="bacon" value="bacon">Bacon</input>
     <input id="ingredientes" class="input" type="checkbox" name="cebolla" value="cebolla"/>Cebolla<br />
-    <input id="ingredientes" class="input" type="checkbox" name="champiñon" value="champiñon">Champiñones</input>
-    <input id="ingredientes" class="input" type="checkbox" name="jamon" value="jamon">Jamón cocido</input>
+    <input id="ingredientes" class="input" type="checkbox" name="champiñon" value="champinon">Champiñones</input>
     <input id="ingredientes" class="input" type="checkbox" name="peperoni" value="peperoni">Peperoni</input>
-    <input id="ingredientes" class="input" type="checkbox" name="pimiento" value="pimiento"/>Pimiento verde<br/>
   </div> 
 
     <br>
