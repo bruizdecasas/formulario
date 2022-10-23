@@ -22,13 +22,13 @@
   </div>
   <br>
   <div class="row">
-    <label class="required" for="email"><b>Teléfono:</b></label><br />
+    <label class="required" for="telefono"><b>Teléfono:</b></label><br />
     <input id="telefono" class="input" name="email" type="text" value="" size="9" placeholder="Teléfono"/><br />
   </div>
   <br>
   <div class="row">
     <label class="required" for="email"><b>E-mail:</b></label><br />
-    <input id="email" class="input" name="email" type="text" value="" size="30" placeholder="Escribe aquí tu e-mail"/><br />
+    <input id="email" class="input" name="email" type="email" value="" size="30" placeholder="Escribe aquí tu e-mail"/><br />
   </div>
   <br>
   <div class="row">
@@ -47,7 +47,7 @@
     <input id="ingredientes" class="input" type="checkbox" name="champiñon" value="champiñon">Champiñones</input>
     <input id="ingredientes" class="input" type="checkbox" name="jamon" value="jamon">Jamón cocido</input>
     <input id="ingredientes" class="input" type="checkbox" name="peperoni" value="peperoni">Peperoni</input>
-    <input id="ingredientes" class="input" type="checkbox" name="pimiento" value="pimiento"/>Pimiento verde<br />
+    <input id="ingredientes" class="input" type="checkbox" name="pimiento" value="pimiento"/>Pimiento verde<br/>
   </div> 
 
     <br>

@@ -5,14 +5,19 @@ function validacion() {
         nombre.focus();
         return false;
     } 
+    if (direccion.value.trim() == "") {
+        alert('Por favor, escribe tu dirección');
+        direccion.focus();
+        return false;
+    }
     if (telefono.value.trim() == "") {
         alert('Por favor, escribe tu teléfono');
         telefono.focus();
         return false;
     }
-    if (direccion.value.trim() == "") {
-        alert('Por favor, escribe tu dirección');
-        direccion.focus();
+    if (email.value.trim() == "") {
+        alert('Por favor, escribe tu e-mail');
+        email.focus();
         return false;
     }
 
