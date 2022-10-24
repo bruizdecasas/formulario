@@ -5,21 +5,25 @@ function validacion() {
         nombre.focus();
         return false;
     } 
+    console.log("comprobando el nombre")
     if (direccion.value.trim() == "") {
         alert('Por favor, escribe tu dirección');
         direccion.focus();
         return false;
     }
+    console.log("comprobada la dirección")
     if (telefono.value.trim() == "") {
         alert('Por favor, escribe tu teléfono');
         telefono.focus();
         return false;
     }
+    console.log("comprobado el teléfono")
     if (email.value.trim() == "") {
         alert('Por favor, escribe tu e-mail');
         email.focus();
         return false;
     }
+    console.log("comprobado el email")
 
     tamaño = document.getElementsByName("tamaño");
             var seleccionado = false;
@@ -33,7 +37,7 @@ function validacion() {
                 alert('Debes seleccionar un tamaño para tu pizza');
                 return false;
             }
-
+            console.log("comprobado el tamaño")        
     ingredientes = 0;
             if (bacon.checked==true) ingredientes++;
             if (cebolla.checked==true) ingredientes++;
@@ -43,7 +47,8 @@ function validacion() {
 
         if (ingredientes == 0 ){
             alert ("Debes elegir al menos un ingrediente");
-        }
+        } 
+        console.log("comprobados los ingredientes")
         
             
 
