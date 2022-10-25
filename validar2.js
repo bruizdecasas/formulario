@@ -37,14 +37,16 @@ function validacion() {
                 alert('Debes seleccionar un tamaño para tu pizza');
                 return false;
             }
-    console.log ("comprobado tamaño")  
+    console.log ("comprobado tamaño")
     
-    if (!ingredientes.checked) {
-        alert('Debes seleccionar algún ingrediente');
-        return false;
+    var isChecked = document.getElementById('ingredientes').checked;
+    if(isChecked==false) {
+        alert ("debes elegir al menos un ingrediente")
+        return false
     }
     console.log ("comprobados los ingredientes")  
-            
+    
+    alert ("Vamos a realizar tu pedido")
 }
 
 window.onload = function(){
