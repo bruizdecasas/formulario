@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./validar2.js"></script>
+	<title>Etiquetas</title>
+</head>
+
+<div id="after_submit"></div>
+
+<form id="formulario_pizza" action="#" method="get">
+  <div class="row">
+    <label class="required" for="nombre"><b>Nombre:</b> </label><br />
+    <input id="nombre" class="input" name="nombre" type="text" value="" size="30" placeholder="Escribe aquí tu nombre"/><br />
+  </div>
+  <br>
+  <div class="row">
+    <label class="required" for="direccion"><b>Dirección:</b></label><br />
+    <input id="direccion" class="input" name="direccion" type="text" value="" size="30" placeholder="Escribe aquí tu dirección"/><br />
+  </div>
+  <br>
+  <div class="row">
+    <label class="required" for="telefono"><b>Teléfono:</b></label><br />
+    <input id="telefono" class="input" name="telefono" type="text" value="" size="9" placeholder="Teléfono"/><br />
+  </div>
+  <br>
+  <div class="row">
+    <label class="required" for="email"><b>E-mail:</b></label><br />
+    <input id="email" class="input" name="email" type="text" value="" size="30" placeholder="Escribe aquí tu e-mail"/><br />
+  </div>
+  <br>
+  <div class="row">
+    <label class="required" for="tamano"><b>Tamaño de la pizza:</b> </label><br />
+    <input id="tamano" class="input" name="tamano" type="radio" value="Pequeña"/> Pequeña (1 persona) <br />
+    <input id="tamano" class="input" name="tamano" type="radio" value="Mediano"/> Mediana (2 personas) <br />
+    <input id="tamano" class="input" name="tamano" type="radio" value="Grande"/> Grande (3-4 personas) <br />
+  </div>
+  <br>
+  <div class="row">
+    <label class="required" for="ingredientes"><b>Ingredientes:</b></label><br />
+    <input id="ingredientes" class="input" type="checkbox" name="ingredientes" value="bacon">Bacon</input>
+    <input id="ingredientes" class="input" type="checkbox" name="ingredientes" value="cebolla"/>Cebolla<br />
+    <input id="ingredientes" class="input" type="checkbox" name="ingredientes" value="champinon">Champiñones</input>
+    <input id="ingredientes" class="input" type="checkbox" name="ingredientes" value="peperoni">Peperoni</input>
+  </div> 
+
+    <br>
+    <input id="submit_button" type="submit" value="Realizar pedido" />
+
+</form>
+
+</html>
