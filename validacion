@@ -38,16 +38,14 @@ function validacion() {
                 return false;
             }
             console.log("comprobado el tamaño")        
-    ingredientes = 0;
-            if (bacon.checked==true) ingredientes++;
-            if (cebolla.checked==true) ingredientes++;
-            if (champinon.checked==true) ingredientes++;
-            if (peperoni.checked==true) ingredientes++;
-        console.log ("has elegido "+ ingredietes + "ingredientes");
-
-        if (ingredientes == 0 ){
-            alert ("Debes elegir al menos un ingrediente");
-        } 
+        if(!ingredientes.checked) {
+        alert ("debes elegir al menos un ingrediente")
+        return false
+    }
+    console.log ("comprobados los ingredientes")  
+    
+    alert ("Vamos a realizar tu pedido")
+}
         console.log("comprobados los ingredientes")
         
             
