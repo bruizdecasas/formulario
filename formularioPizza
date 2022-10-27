@@ -23,28 +23,36 @@
   <br>
   <div class="row">
     <label class="required" for="telefono"><b>Teléfono:</b></label><br />
-    <input id="telefono" class="input" name="email" type="text" value="" size="9" placeholder="Teléfono"/><br />
+    <input id="telefono" class="input" pattern="\d*" name="telefono" type="text" value="" size="9" placeholder="Teléfono"/><br />
   </div>
   <br>
   <div class="row">
     <label class="required" for="email"><b>E-mail:</b></label><br />
-    <input id="email" class="input" name="email" type="email" value="" size="30" placeholder="Escribe aquí tu e-mail"/><br />
+    <input id="email" class="input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" type="text" value="" size="30" placeholder="Escribe aquí tu e-mail"/><br />
   </div>
   <br>
   <div class="row">
-    <label class="required" for="tamaño"><b>Tamaño de la pizza:</b> </label><br />
-    <input id="tamaño" class="input" name="tamaño" type="radio" value="Pequeña"/> Pequeña (1 persona) <br />
-    <input id="tamaño" class="input" name="tamaño" type="radio" value="Mediano"/> Mediana (2 personas) <br />
-    <input id="tamaño" class="input" name="tamaño" type="radio" value="Grande"/> Grande (3-4 personas) <br />
+   <h3>Tamaño de la pizza:</h3> 
+    <input id="pequena" class="input" name="tamano" type="radio" value="pequeña">
+    <label for="pequena">Pequeña (1 persona)</label>
+    <input id="mediana" class="input" name="tamano" type="radio" value="mediana">
+    <label for="mediana">Mediana (2 personas)</label>
+    <input id="grande" class="input" name="tamano" type="radio" value="grande">
+    <label for="grande">Grande (3-4 personas)</label>
   </div>
   <br>
   <div class="row">
-    <label class="required" for="ingredientes"><b>Ingredientes:</b></label><br />
-    <input id="ingredientes" class="input" type="checkbox" name="bacon" value="bacon">Bacon</input>
-    <input id="ingredientes" class="input" type="checkbox" name="cebolla" value="cebolla"/>Cebolla<br />
-    <input id="ingredientes" class="input" type="checkbox" name="champiñon" value="champinon">Champiñones</input>
-    <input id="ingredientes" class="input" type="checkbox" name="peperoni" value="peperoni">Peperoni</input>
+    <h3>Ingredientes:</h3>    
+    <input id="bacon" class="input ingredientes" type="checkbox" name="bacon" value="bacon">
+    <label class="required" for="bacon">Bacon</label>
+    <input id="cebolla" class="input ingredientes" type="checkbox" name="cebolla" value="cebolla">
+    <label class="required" for="cebolla">Cebolla</label>    
+    <input id="champinon" class="input ingredientes" type="checkbox" name="champinon" value="champinon">
+    <label class="required" for="champinon">Champiñones</label>
+    <input id="peperoni" class="input ingredientes" type="checkbox" name="peperoni" value="peperoni">
+    <label class="required" for="peperoni">Peperoni</label>
   </div> 
+    <br>
 
     <br>
     <input id="submit_button" type="submit" value="Realizar pedido" />
