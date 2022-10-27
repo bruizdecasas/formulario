@@ -1,3 +1,4 @@
+
 function validacion() {
     console.log("comprobando la validación")
     if (nombre.value.trim() == "") {
@@ -5,7 +6,7 @@ function validacion() {
         nombre.focus();
         return false;
     } 
-    console.log("comprobando el nombre")
+    console.log("comprobado el nombre")
     if (direccion.value.trim() == "") {
         alert('Por favor, escribe tu dirección');
         direccion.focus();
@@ -20,15 +21,15 @@ function validacion() {
     console.log("comprobado el teléfono")
     if (email.value.trim() == "") {
         alert('Por favor, escribe tu e-mail');
-        email.focus();
+        direccion.focus();
         return false;
     }
-    console.log("comprobado el email")
+    console.log("comprobado e-mail")
 
-    tamaño = document.getElementsByName("tamaño");
+    tamano = document.getElementsByName("tamano");
             var seleccionado = false;
-            for(var i=0; i<tamaño.length; i++) {
-                if(tamaño[i].checked) {
+            for(var i=0; i<tamano.length; i++) {
+                if(tamano[i].checked) {
                     seleccionado = true;
                     break;
                 }
@@ -37,21 +38,36 @@ function validacion() {
                 alert('Debes seleccionar un tamaño para tu pizza');
                 return false;
             }
-            console.log("comprobado el tamaño")        
-        if(!ingredientes.checked) {
+    console.log("comprobado tamaño")
+
+    if(!bacon.checked && !cebolla.checked && !peperoni.checked && !champinon.checked) {
         alert ("debes elegir al menos un ingrediente")
         return false
     }
-    console.log ("comprobados los ingredientes")  
+    console.log("comprobados los ingredientes")  
     
-    alert ("Vamos a realizar tu pedido")
+    alert("el precio de tu pizza es " + calcularPrecioPizza()+ "€. Ya va en camino");
 }
-        console.log("comprobados los ingredientes")
-        
-            
 
+function calcularPrecioPizza () {
+    let listadoPrecios={"pequeña" : 5, "mediana" : 10, "grande": 15}
+    var precioPizzaSeleccionado = 0;
+    tamano = document.getElementsByName("tamano");
+    for(var i=0; i<tamano.length; i++) {
+        if(tamano[i].checked) {
+            precioPizzaSeleccionado=listadoPrecios[tamano[i].value] 
+            break;
+        }     
+    }
+    ingredientes=document.getElementsByClassName("ingredientes")
+    for(var i=0; i<ingredientes.length; i++){
+        if(ingredientes[i].checked) {
+            precioPizzaSeleccionado++;
+        }
+    }
+    return precioPizzaSeleccionado;
+}
 
 window.onload = function(){
     formulario_pizza.onsubmit = validacion;                                    
-}
 }
