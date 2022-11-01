@@ -457,14 +457,14 @@ form.appendChild(horarioCitafieldset);
 
 // Añadimos el textarea
 {/* <p>
-    <label for="otro">infromación adicional:</label>
+    <label for="otro">información adicional:</label>
     <textarea id="otro" name="otro" rows="4" cols="50">Escriba información adicional.</textarea>
 </p> */}
 
 const textareaParagraph = document.createElement("p");
 const textareaLabel = document.createElement("label");
 textareaLabel.setAttribute("for", "otro");
-const textareaLabelText = document.createTextNode("Infromación adicional:");
+const textareaLabelText = document.createTextNode("Información adicional:");
 textareaLabel.appendChild(textareaLabelText);
 textareaParagraph.appendChild(textareaLabel);
 
